@@ -142,9 +142,9 @@ var TicTacToe = {
 			msg = winner + ' won! Play again?';
 		else
 			msg = 'The game has ended in a tie. Play again?';
-		restart_game = confirm(msg);
+	setTimeout(function(){	restart_game = confirm(msg);
 		if (restart_game)
-			this.init();
+			tictactoe.init();},100);
 	}
 };
 
